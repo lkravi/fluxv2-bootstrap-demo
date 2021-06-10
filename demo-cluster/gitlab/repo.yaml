@@ -28,6 +28,9 @@ spec:
         kind: HelmRepository
         name: gitlab
   values:
-    global.hosts.domain: "gitlab.lkravi.me"
-    certmanager-issuer.email: "sliit.rnp@gmail.com"
+    global:
+      hosts:
+        domain: "gitlab.lkravi.me"
+    certmanager-issuer:
+      email: "sliit.rnp@gmail.com"
   interval: 1m0s
